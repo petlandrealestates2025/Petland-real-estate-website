@@ -75,7 +75,26 @@
                 padding: 20px;
             }
         }
-        
+        /*off-screen-menu*/
+        .off-screen-menu{
+            background-color: rgb(34,37, 49);
+            height:100hv;
+            width:100%;
+            max-width:450px;
+            position:fixed;
+            top:0;
+            right: -450px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            font-size:3rem ;
+            transition: .3s ease;
+        }
+        .off-screen-menu.active{
+            right:0
+        }
         /* Center alignment */
         .nav-tabs {
             display: flex;
@@ -226,6 +245,20 @@
             <button type="submit">Search</button>
             
         </form>
+        <div class="off-screen menu">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
         <nav class="navbar  navbar-expand-sm bg-success navbar-info">
             <div class="container-fluid">
                <a class="navbar-brand" href="#">
@@ -259,15 +292,6 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <nav>
-        <ul class="nav-tabs"></ul>
-            <button><a href="#section1" width="110px" >Home</a></button>
-            <button><a href="#section2" width="110px" >Properties</a></button>
-            <button><a href="#section3" width="110px" >Buy and Build</a></button>
-            <button><a href="contact.html" width="110px" >Contact Us</a></button>
-        </ul>
-    </nav>
-   
     <div class="section1">
         <img class="image" src="DJI_0022.JPG" width="500px" alt="Image 10">
         <h>ABOUT US</h>Petland Real Estates is your key partner for new real estate solutions and innovative design and management. Our commitment to excellence combines sustainable design with forward-thinking design to deliver unparalleled results for our clients. At Petland, we pride ourselves on providing quality real estate services, ensuring that every project is created to deliver the best possible outcome for our clients and the environment. Focused on creativity and sustainability, our team of experts reinterprets traditional processes to create inspiring, timeless designs. Whether you are looking for visionary designs, sustainable development ideas or comprehensive solutions, Petland can help you turn your vision into reality. Join us and experience the difference of working with a company committed to delivering excellence in every detail.
@@ -336,6 +360,11 @@
         <p>
             Petland has the mission to create, preserve, and provide affordable housing to transform communities.
             </p>
+            <div class="container p-5 my-5 bg-success text-white text-align-center ">
+                <h2 class="text-center">Our goal</h2>
+                <p>Our major goal is to build a portfolio of real estate assets that can help investors protect their wealth through a network of industry professionals and clients towards a steady stream of business.
+                                    </p>
+            </div>
         </div>
     <div class="container p-5 my-5 bg-success text-white text-align-center padding:20px;">
         <h2 class="text-center">Our Values</h2>
@@ -345,11 +374,6 @@
                 <br>Learning from failure: Turning setbacks into success
                 <br>Flexibility: Embracing innovation and change
                 </p>
-        </div>
-        <div class="container p-5 my-5 bg-success text-white text-align-center ">
-            <h2 class="text-center">Our goal</h2>
-            <p>Our major goal is to build a portfolio of real estate assets that can help investors protect their wealth through a network of industry professionals and clients towards a steady stream of business.
-                                </p>
         </div>
         <div class="container p-5 my-5 bg-success text-white text-align-center ">
             <h2 class="text-center">Our services</h2>
@@ -394,7 +418,7 @@
             <div class="flex-column1">
                 <h>Follow Us<h>
                 <img src="icons8-facebook-48.png" alt="" />
-                <img src="twitter.png" alt="" />
+                <img src="" alt="" />
                 <img src="icons8-instagram-48.png" alt="" />
                 <img src="tiktok.png" alt="" />
             </div>
